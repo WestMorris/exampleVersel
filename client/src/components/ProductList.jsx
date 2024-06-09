@@ -1,4 +1,5 @@
 import React from 'react';
+import { ProductListPropTypes } from './PropTypes';
 import { Link } from 'react-router-dom';
 
 const ProductList = ({ products, removeProduct }) => {
@@ -18,6 +19,8 @@ const ProductList = ({ products, removeProduct }) => {
     </div>
   );
 };
+
+ProductList.propTypes = ProductListPropTypes;
 
 export default ProductList;
 

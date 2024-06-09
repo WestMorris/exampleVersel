@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ProductFormPropTypes } from './PropTypes';
 import axios from "axios";
 
 const ProductForm = ({ addProduct, product, editMode }) => {
@@ -96,6 +97,8 @@ const ProductForm = ({ addProduct, product, editMode }) => {
     </div>
   );
 };
+
+ProductForm.propTypes = ProductFormPropTypes;
 
 export default ProductForm;
 
